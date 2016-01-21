@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/gameoverride.css" type="text/css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+
+</head>
+<body>
+<div id="gamewrap">
+    <div class="background"></div>
+
+
+    <div id='cssmenu'>
+        <ul>
+            <li class='active'><a href='game.html'>Snake it till you make it</a>
+            </li>
+            <li><a href='score.html'>Score</a></li>
+            <li><a href='delete.html'>Delete game</a></li>
+            <li><a href='join.html'>Join game</a></li>
+            <li><a href='index.html' id="dlcookie">Login</a></li>
+        </ul>
+    </div>
+    <div id="gamecontainer">
+        <div id="arena">
+            <canvas id="grid" width="480" height="480"></canvas>
+            <br/>
+        </div>
+
+        <div id="form">
+            <form id="idForm" method="POST">
+
+
+                </optgroup>
+                </select>
+                <input type="hidden" name="frmOpponentControls" id="frmOpponentControls">
+                <input type="button" value="Start Game" id="start">
+
+
+            </form>
+
+        </div>
+        <!--#form-->
+
+
+        <div id="movements">
+            Movements <span></span><br/>
+
+            <div class="arrows"></div>
+        </div>
+        <!--#movements-->
+
+    </div>
+    <!--#container-->
+</div>
+
+
+<script src="js/snake.js"></script>
+<script src="js/client.js"></script>
+</body>
+</html>
